@@ -230,7 +230,7 @@ URI     : https://colorlib.com
 
 
                       <!--Search Box Início-->
-                      <div class="row block-branco-search">
+                      <div class="row block-branco-search search_box">
                           <div class="col-sm-12 padding-zero">
 
                             <!--produtos-->
@@ -240,29 +240,73 @@ URI     : https://colorlib.com
                                   <div class="col-sm-6">
 
                                       <div class="row block-cinza-search">
-                                          <div class="col-sm-4">
-                                              <img src="..." class="img-responsive img-rounded" alt="Responsive image">                                              
+                                          <div class="col-sm-3">
+                                              <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
+                                          </div>
+                                          <div class="col-sm-5">
+                                              <p class="search-produto-text">
+                                                00817943-2<br>
+                                                Lustre Cristal Cobre Louis
+                                                19012 - TASCHIBRA SC
+                                                ENTREGA, RETIRA
+                                              </p>
                                           </div>
                                           <div class="col-sm-4">
-                                              <p>dfadfdsfafdafafaff</p>
-                                          </div>
-                                          <div class="col-sm-4">
-                                              <p>dfadfdsfafdafafaff</p>
-                                              <h2>Produtos</h2>
+                                              <p>R$ 24.449,90</p>
+                                              <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                                  <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
+                                              </a>
                                           </div>
                                       </div>                                              
                                   </div>
 
-                                  <!--produto1-->
+                                  <!--produto2-->
                                   <div class="col-sm-6">
 
-                                      <div class="row block-cinza-search">
-                                          <div class="col-sm-12">
-                                              <img src="..." class="img-responsive" alt="Responsive image">
-                                              <h2>Produtos</h2>
-                                          </div>
-                                      </div>                                              
-                                  </div>
+                                    <div class="row block-cinza-search">
+                                        <div class="col-sm-3">
+                                            <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <p class="search-produto-text">
+                                              00817943-2<br>
+                                              Lustre Cristal Cobre Louis
+                                              19012 - TASCHIBRA SC
+                                              ENTREGA, RETIRA
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p>R$ 24.449,90</p>
+                                            <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                                <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
+                                             </a>
+                                        </div>
+                                    </div>                                              
+                                </div>
+
+                                <!--produto3-->
+                                <div class="col-sm-6">
+
+                                  <div class="row block-cinza-search">
+                                      <div class="col-sm-3">
+                                          <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
+                                      </div>
+                                      <div class="col-sm-5">
+                                          <p class="search-produto-text">
+                                            00817943-2<br>
+                                            Lustre Cristal Cobre Louis
+                                            19012 - TASCHIBRA SC
+                                            ENTREGA, RETIRA
+                                          </p>
+                                      </div>
+                                      <div class="col-sm-4">
+                                          <p>R$ 24.449,90</p>
+                                          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                            <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
+                                          </a>
+                                      </div>
+                                  </div>                                              
+                              </div>
 
 
 
@@ -580,12 +624,17 @@ URI     : https://colorlib.com
         $('.btn-seta-left').toggleClass('btn-seta-right');
     });
 
-
-    $( "#search" ).click(function(e) {
-		e.preventDefault();
-		$(".search_box").toggleClass('active');
+//search box
+    $( ".campo-busca" ).focus(function(e) {
+        e.preventDefault();
+        $(".search_box").toggleClass('active-search');
 	  });
     
+    $( ".campo-busca" ).focusout(function(e) {
+        e.preventDefault();
+        $(".search_box").toggleClass('active-search');
+	  });
+
     </script>
     
 
