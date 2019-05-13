@@ -810,3 +810,7 @@ box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
   .ajuste-barra-etapa-span{padding: 10px 0 10px 0 !important;}
   .ajuste-mobile-esquerda{text-align:left;}
 }
+
+@media (max-width: 808px) {
+  .icone-campo-busca{background-image: none;}
+}
