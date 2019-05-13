@@ -17,6 +17,8 @@ URI     : https://colorlib.com
     <meta name="description" content="Mobland - Mobile App Landing Page Template">
     <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
 
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -35,7 +37,7 @@ URI     : https://colorlib.com
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 
-
+   
 
 
 </head>
@@ -77,22 +79,22 @@ URI     : https://colorlib.com
     <a href="#" class="btn-expand-collapse"><img class="logo" src="images/logo.png" /><span class="glyphicon glyphicon-chevron-left btn-seta-icon btn-seta-left"></span></a>
     <ul class="navbar-primary-menu">
       <li>
-        <a href="#"><span class="glyphicon glyphicon-list-alt"></span><span class="nav-label">Pedido de Venda e Orçamento</span></a>
-        <a href="#"><span class=""></span><span class="nav-label">Novo</span></a>
-        <a href="#"><span class=""></span><span class="nav-label">Consultar</span></a>
-        <a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">Análise Gerencial</span></a>
-        <a href="#"><span class="glyphicon glyphicon-cog"></span><span class="nav-label">Consulta Estoques</span></a>
+        <a href="#"><span class="glyphicon glyphicon glyphicon-lock ajuste-navbar-primary-icons"></span><span class="nav-label">Pedido de Venda<br> e Orçamento</span></a>
+        <a href="#" class="menu-pedido-de-venda"><span class=""></span><span class="nav-label">Novo</span></a>
+        <a href="#" class="menu-pedido-de-venda"><span class=""></span><span class="nav-label">Consultar</span></a>
+        <a href="#"><span class="glyphicon glyphicon-briefcase"></span><span class="nav-label">Análise Gerencial</span></a>
+        <a href="#"><span class="glyphicon glyphicon-search"></span><span class="nav-label">Consulta Estoques</span></a>
         <a href="#"><span class="glyphicon glyphicon-film"></span><span class="nav-label">Clientes</span></a>
         <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Lista de Presente</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">SAC</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Administração</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Painel do Vendedor</span></a>
+        <a href="#"><span class="glyphicon glyphicon-headphones"></span><span class="nav-label">SAC</span></a>
+        <a href="#"><span class="glyphicon glyphicon-lock"></span><span class="nav-label">Administração</span></a>
+        <a href="#"><span class="glyphicon glyphicon-usd"></span><span class="nav-label">Painel do Vendedor</span></a>
         <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Histórico Cliente</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Consultar Reserva de Produtos</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Baixa do Sistema Tintométrico</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Emissão de Cartazete</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Consulta</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Sair</span></a>
+        <a href="#"><span class="glyphicon glyphicon-search ajuste-navbar-primary-icons"></span><span class="nav-label">Consultar Reserva de Produtos</span></a>
+        <a href="#"><span class="glyphicon glyphicon-filter ajuste-navbar-primary-icons"></span><span class="nav-label">Baixa do Sistema Tintométrico</span></a>
+        <a href="#"><span class="glyphicon glyphicon-plus ajuste-navbar-primary-icons"></span><span class="nav-label">Emissão de Cartazete</span></a>
+        <a href="#"><span class="glyphicon glyphicon-search"></span><span class="nav-label">Consulta</span></a>
+        <a href="#"><span class="glyphicon glyphicon-log-out"></span><span class="nav-label">Sair</span></a>
       </li>
     </ul>
   </nav>
@@ -138,8 +140,8 @@ URI     : https://colorlib.com
                       <div class="form-group">
                         <label for="exampleInputEmail1">Cliente</label>
                         <div class="cliente-tipo btn-group btn-group-xs" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default active">novo</button>
-                            <button type="button" class="btn btn-default">editar</button>
+                            <button type="button" class="btn btn-default btn-cliente-ativo btn-cliente">novo</button>
+                            <button type="button" class="btn btn-default btn-cliente">editar</button>
                           </div>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Busque por Códigos, CPF, RG ou Nome do cliente">
                       </div>
@@ -229,6 +231,48 @@ URI     : https://colorlib.com
                       </form>
 
 
+
+                      <!-- DRAGGABLE INICIO -->
+                      
+                          <!--Search Box Início-->
+                      <div id="draggable" class="row block-branco-search adicionar-junto">
+                          <div class="col-sm-12 padding-zero">
+
+                            <!--produtos-->
+                              <div class="row">
+
+                                  <!--produto-adicionar-junto-->
+                                  <div class="col-sm-12">
+
+                                      <div class="row block-cinza-search">
+                                          <div class="col-sm-3">
+                                              <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
+                                          </div>
+                                          <div class="col-sm-5">
+                                              <p class="search-produto-text">
+                                                00817943-2<br>
+                                                Lustre Cristal Cobre Louis
+                                                19012 - TASCHIBRA SC
+                                                ENTREGA, RETIRA
+                                              </p>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <p class="font-preço">R$ 24.449,90</p>
+                                              <a class="btn btn-default btn-inicio btn-produto-adicionar" href="#" role="button">
+                                                  <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
+                                              </a>
+                                          </div>
+                                      </div>                                              
+                                  </div>
+                                  <!--produto1 fim-->
+
+                                </div>
+                                </div>
+                              </div>
+                        
+                    <!-- DRAGGABLE FIM -->
+
+
                       <!--Search Box Início-->
                       <div class="row block-branco-search search_box">
                           <div class="col-sm-12 padding-zero">
@@ -252,8 +296,8 @@ URI     : https://colorlib.com
                                               </p>
                                           </div>
                                           <div class="col-sm-4">
-                                              <p>R$ 24.449,90</p>
-                                              <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                              <p class="font-preço">R$ 24.449,90</p>
+                                              <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                                   <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                               </a>
                                           </div>
@@ -276,8 +320,8 @@ URI     : https://colorlib.com
                                             </p>
                                         </div>
                                         <div class="col-sm-4">
-                                            <p>R$ 24.449,90</p>
-                                            <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                            <p class="font-preço">R$ 24.449,90</p>
+                                            <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                                 <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                              </a>
                                         </div>
@@ -300,18 +344,48 @@ URI     : https://colorlib.com
                                           </p>
                                       </div>
                                       <div class="col-sm-4">
-                                          <p>R$ 24.449,90</p>
-                                          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button">
+                                          <p class="font-preço">R$ 24.449,90</p>
+                                          <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                             <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                           </a>
                                       </div>
                                   </div>                                              
                               </div>
 
+                               <!--produto4-->
+                               <div class="col-sm-6">
+
+                                  <div class="row block-cinza-search">
+                                      <div class="col-sm-3">
+                                          <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
+                                      </div>
+                                      <div class="col-sm-5">
+                                          <p class="search-produto-text">
+                                            00817943-2<br>
+                                            Lustre Cristal Cobre Louis
+                                            19012 - TASCHIBRA SC
+                                            ENTREGA, RETIRA
+                                          </p>
+                                      </div>
+                                      <div class="col-sm-4">
+                                          <p class="font-preço">R$ 24.449,90</p>
+                                          <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
+                                            <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
+                                          </a>
+                                      </div>
+                                  </div>                                              
+                              </div>
+
+                              <!--btn ver mais-->
+                              <div class="col-sm-12 ajuste-text-align-center">
+                                  <a class="btn btn-default btn-inicio btn-pause btn-ver-tudo-search" href="#" role="button">
+                                      <span class=""></span> Ver todas as opções
+                                    </a>
+                              </div>
 
 
                                 </div>
-                                <!--produto1-->
+                                <!--fim box de produtos-->
 
                       
                                 
@@ -608,9 +682,10 @@ URI     : https://colorlib.com
     </footer>
 
 
-   
+    
     <!-- jQuery and Bootstrap -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Plugins JS -->
     <script src="js/owl.carousel.min.js"></script>
@@ -622,6 +697,7 @@ URI     : https://colorlib.com
 				$('.navbar-primary').toggleClass('collapsed');
         $('.btn-seta-icon').toggleClass('glyphicon-chevron-right');
         $('.btn-seta-left').toggleClass('btn-seta-right');
+        $('.menu-pedido-de-venda').toggleClass('menu-pedido-de-venda-display');
     });
 
 //search box
@@ -631,9 +707,22 @@ URI     : https://colorlib.com
 	  });
     
     $( ".campo-busca" ).focusout(function(e) {
-        e.preventDefault();
+        e.preventDefault(); 
         $(".search_box").toggleClass('active-search');
 	  });
+
+
+//adicionar junto
+    $( ".campo-comprar" ).click(function(e) {
+        e.preventDefault();
+        $(".adicionar-junto").toggleClass('active-adicionar-junto');
+	  });
+
+
+    //DRAGGABLE
+    $( function() {
+   $( "#draggable" ).draggable();
+ } );
 
     </script>
     
