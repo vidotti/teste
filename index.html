@@ -84,8 +84,8 @@ URI     : https://colorlib.com
         <a href="#" class="menu-pedido-de-venda"><span class=""></span><span class="nav-label">Consultar</span></a>
         <a href="#"><span class="glyphicon glyphicon-briefcase"></span><span class="nav-label">Análise Gerencial</span></a>
         <a href="#"><span class="glyphicon glyphicon-search"></span><span class="nav-label">Consulta Estoques</span></a>
-        <a href="#"><span class="glyphicon glyphicon-film"></span><span class="nav-label">Clientes</span></a>
-        <a href="#"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Lista de Presente</span></a>
+        <a href="#"><span class="glyphicon glyphicon-user"></span><span class="nav-label">Clientes</span></a>
+        <a href="#"><span class="glyphicon glyphicon-gift"></span><span class="nav-label">Lista de Presente</span></a>
         <a href="#"><span class="glyphicon glyphicon-headphones"></span><span class="nav-label">SAC</span></a>
         <a href="#"><span class="glyphicon glyphicon-lock"></span><span class="nav-label">Administração</span></a>
         <a href="#"><span class="glyphicon glyphicon-usd"></span><span class="nav-label">Painel do Vendedor</span></a>
@@ -110,12 +110,12 @@ URI     : https://colorlib.com
     <!--botoes iniciais-->
     <div class="row botoes-iniciais">
         <div class="col-md-8">
-          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button"><span class="glyphicon glyphicon-pause"></span>Pausar</a>
-          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button"><span class="glyphicon glyphicon-plus"></span>Mais opções</a>
+          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button"><span class="glyphicon glyphicon-pause"></span> Pausar</a>
+          <a class="btn btn-default btn-inicio btn-pause" href="#" role="button"><span class="glyphicon glyphicon-plus"></span> Mais opções</a>
         </div>
         <div class="col-md-4 ajuste-text-align-right">
-            <a class="btn btn-default btn-inicio btn-topo-direita" href="#" role="button"><span class="glyphicon glyphicon-chevron-left"></span>Anterior</a>
-            <a class="btn btn-default btn-inicio btn-proximo" href="#" role="button">Próximo<span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-default btn-inicio btn-topo-direita" href="#" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Anterior</a>
+            <a class="btn btn-default btn-inicio btn-proximo" href="#" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Próximo</a>
         </div>        
       </div>
 
@@ -138,7 +138,7 @@ URI     : https://colorlib.com
               <div class="col-sm-5">
                   <form>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Cliente</label>
+                        <label class="label-itens-tela" for="exampleInputEmail1">Cliente</label>
                         <div class="cliente-tipo btn-group btn-group-xs" role="group" aria-label="...">
                             <button type="button" class="btn btn-default btn-cliente-ativo btn-cliente">novo</button>
                             <button type="button" class="btn btn-default btn-cliente">editar</button>
@@ -153,7 +153,7 @@ URI     : https://colorlib.com
                   <form>
                       <div class="form-group">
                           <div class="exemplo1">
-                              <label for="">Tipo</label>
+                              <label class="label-itens-tela" for="">Tipo</label>
                               <div>
                                 <input type="radio" value="0" checked="checked" name="campo-radio" id="campo-radio1" />
                                 <label for="campo-radio1">Pedido</label>
@@ -168,7 +168,7 @@ URI     : https://colorlib.com
                 <div class="col-sm-4">
                     <form>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Nº do Pedido</label>
+                          <label class="label-itens-tela" for="exampleInputEmail1">Nº do Pedido</label>
                           <input class="form-control" id="disabledInput" type="text" placeholder="0" disabled readonly>
                         </div>
                     </form>
@@ -188,13 +188,13 @@ URI     : https://colorlib.com
           
     <div class="row etapas-sistema bloco-normal">
         <div class="col-md-4 ajuste-barra-itens padding-zero">
-          <span class="ajuste-barra-etapa-span ajuste-barra-etapa-span-selected padding-right"><span class="etapas-numeros etapas-numeros-selected">1</span> Adicionar Produtos</span>
+          <span class="ajuste-barra-etapa-span ajuste-barra-etapa-span-selected padding-right"><span class="etapas-numeros etapas-numeros-selected">1</span>  Adicionar Produtos</span>
         </div>
         <div class="col-md-4 ajuste-text-align-center ajuste-barra-itens padding-zero">
-            <span class="ajuste-barra-etapa-span padding-left-right"><span class="etapas-numeros">2</span> Entrega e Estoque</span>
+            <span class="ajuste-barra-etapa-span padding-left-right"><span class="etapas-numeros">2</span>  Entrega e Estoque</span>
         </div>
         <div class="col-md-4 ajuste-text-align-right ajuste-barra-itens padding-zero">
-            <span class="ajuste-barra-etapa-span padding-left"><span class="etapas-numeros">3</span> Negociação e Pagamento</span> 
+            <span class="ajuste-barra-etapa-span padding-left"><span class="etapas-numeros">3</span>  Negociação e Pagamento</span> 
         </div>
         <div class="col-md-12 ajuste-barra-etapas"></div>
                 
@@ -235,8 +235,12 @@ URI     : https://colorlib.com
                       <!-- DRAGGABLE INICIO -->
                       
                           <!--Search Box Início-->
-                      <div id="draggable" class="row block-branco-search adicionar-junto">
+                      <div id="draggable" class="row block-branco-flymenu adicionar-junto">
                           <div class="col-sm-12 padding-zero">
+
+                              <div class="row">
+                                  <div class="col-sm-12 adicionar-junto-title">Adicionar junto:</div>
+                              </div>
 
                             <!--produtos-->
                               <div class="row">
@@ -248,23 +252,38 @@ URI     : https://colorlib.com
                                           <div class="col-sm-3">
                                               <img src="images/image-search-thumbnail.jpg" class="img-responsive search-image" alt="Responsive image">                                              
                                           </div>
-                                          <div class="col-sm-5">
+                                          <div class="col-sm-6">
                                               <p class="search-produto-text">
-                                                00817943-2<br>
-                                                Lustre Cristal Cobre Louis
+                                                00817943-2<br>                                                
+                                                <span class="font-weight-bold">LAMPA DICRO LED GU10 3W
+                                                BIV 6500K BRA OUROLUX</span><br>
                                                 19012 - TASCHIBRA SC
                                                 ENTREGA, RETIRA
                                               </p>
                                           </div>
-                                          <div class="col-sm-4">
-                                              <p class="font-preço">R$ 24.449,90</p>
-                                              <a class="btn btn-default btn-inicio btn-produto-adicionar" href="#" role="button">
-                                                  <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
-                                              </a>
+                                          <div class="col-sm-3">
+                                              <p class="font-weight-bold">R$ 8,90/unid</p>
+                                              <span class="glyphicon glyphicon-minus"></span>
+                                                  <input type="text" class="form-control table-form-quantidade" id="quantidade1">
+                                              <span class="glyphicon glyphicon-plus"></span>
                                           </div>
                                       </div>                                              
                                   </div>
                                   <!--produto1 fim-->
+                                  
+                                  <!--produto-adicionar-junto-->
+                                  <div class="col-sm-12">
+                                    <p class="ajuste-text-align-right">Item e quantidade recomendada para o produto já adicionado</p>
+                                  </div>
+
+                                  <div class="col-md-12 ajuste-text-align-right">
+                                      <a class="btn btn-default btn-inicio btn-topo-direita campo-comprar2" href="#" role="button">
+                                        Agora não
+                                      </a>
+                                      <a class="btn btn-default btn-inicio btn-proximo campo-comprar2" href="#" role="button">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>Adicionar
+                                      </a>
+                                  </div> 
 
                                 </div>
                                 </div>
@@ -296,7 +315,7 @@ URI     : https://colorlib.com
                                               </p>
                                           </div>
                                           <div class="col-sm-4">
-                                              <p class="font-preço">R$ 24.449,90</p>
+                                              <p class="font-weight-bold">R$ 24.449,90</p>
                                               <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                                   <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                               </a>
@@ -320,7 +339,7 @@ URI     : https://colorlib.com
                                             </p>
                                         </div>
                                         <div class="col-sm-4">
-                                            <p class="font-preço">R$ 24.449,90</p>
+                                            <p class="font-weight-bold">R$ 24.449,90</p>
                                             <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                                 <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                              </a>
@@ -344,7 +363,7 @@ URI     : https://colorlib.com
                                           </p>
                                       </div>
                                       <div class="col-sm-4">
-                                          <p class="font-preço">R$ 24.449,90</p>
+                                          <p class="font-weight-bold">R$ 24.449,90</p>
                                           <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                             <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                           </a>
@@ -368,7 +387,7 @@ URI     : https://colorlib.com
                                           </p>
                                       </div>
                                       <div class="col-sm-4">
-                                          <p class="font-preço">R$ 24.449,90</p>
+                                          <p class="font-weight-bold">R$ 24.449,90</p>
                                           <a class="btn btn-default btn-inicio btn-produto-adicionar campo-comprar" href="#" role="button">
                                             <span class="glyphicon glyphicon-shopping-cart"></span> Adicionar
                                           </a>
@@ -433,7 +452,7 @@ URI     : https://colorlib.com
 
                         <fieldset class="inline-block">
                             <div class="form-group">
-                              <label for="Select">Canal de Distribuição</label>
+                              <label class="label-itens-tela" for="Select">Canal de Distribuição</label>
                               <select id="Select" class="form-control">
                                 <option>1-Varejo</option>
                               </select>
@@ -446,7 +465,7 @@ URI     : https://colorlib.com
                         
                         <fieldset class="inline-block">
                             <div class="form-group">
-                              <label for="Select">Modalidade de Entrega</label>
+                              <label class="label-itens-tela" for="Select">Modalidade de Entrega</label>
                               <select id="Select" class="form-control">
                                 <option>E-Entrega</option>
                                 <option>R-Retira</option>
@@ -460,7 +479,7 @@ URI     : https://colorlib.com
                         
                         <fieldset class="inline-block">
                             <div class="form-group">
-                              <label for="Select">De qual filial deve sair a mercadoria</label>
+                              <label class="label-itens-tela" for="Select">De qual filial deve sair a mercadoria</label>
                               <select id="Select" class="form-control">
                                 <option>001-Butanta</option>
                               </select>
@@ -471,7 +490,7 @@ URI     : https://colorlib.com
                        
                           <fieldset disabled class="inline-block">
                             <div class="form-group">
-                              <label for="disabledSelect">Loja Estoque</label>
+                              <label class="label-itens-tela" for="disabledSelect">Loja Estoque</label>
                               <select id="disabledSelect" class="form-control">
                                 <option>Loja</option>
                               </select>
@@ -516,7 +535,7 @@ URI     : https://colorlib.com
                                 </th>
                                     <th>Código</th>
                                     <th>Item</th>
-                                    <th>Preço Unitário</th>
+                                    <th>Preço unit.</th>
                                     <th>Quantidade</th>
                                     <th>Modalidade de Entrega</th>
                                     <th>Total</th>
@@ -706,7 +725,7 @@ URI     : https://colorlib.com
         $(".search_box").toggleClass('active-search');
 	  });
     
-    $( ".campo-busca" ).focusout(function(e) {
+    $( ".campo-comprar" ).click(function(e) {
         e.preventDefault(); 
         $(".search_box").toggleClass('active-search');
 	  });
@@ -717,6 +736,12 @@ URI     : https://colorlib.com
         e.preventDefault();
         $(".adicionar-junto").toggleClass('active-adicionar-junto');
 	  });
+
+    $( ".campo-comprar2" ).click(function(e) {
+        e.preventDefault();
+        $(".adicionar-junto").toggleClass('active-adicionar-junto');
+	  });
+
 
 
     //DRAGGABLE
