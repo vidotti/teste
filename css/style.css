@@ -551,6 +551,16 @@ box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
     background-color: #f7f8f8;
     color: #666;
   }
+
+  .btn-topo-direita:hover,
+  .btn-topo-direita:active,
+  .btn-topo-direita:focus
+
+  {
+    color: #fff !important;
+    background-color: #421b5b !important;
+    border-color: #421b5b !important;
+  }
   
   .btn-proximo{
     background-color: #421b5b;
