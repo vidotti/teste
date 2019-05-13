@@ -208,9 +208,9 @@ Copyright © All rights Reserved
 
 /*ajustes etapas inicio*/
   .inline-block{display: inline-block;}
-  .padding-left{padding: 0 0 0 20px !important;}
-  .padding-right{padding: 0 20px 0 0 !important;}
-  .padding-left-right{padding: 0 20px 0 20px !important;}
+  .padding-left{padding: 0 0 0 20px;}
+  .padding-right{padding: 0 20px 0 0;}
+  .padding-left-right{padding: 0 20px 0 20px;}
   
   .ajuste-cesta-de-produtos{
     margin-bottom: 30px;
@@ -317,8 +317,9 @@ Copyright © All rights Reserved
   background-repeat:no-repeat;
   background-position:0 0;
   display: inline-block;
-  /*font-size: 13px;*/
+  font-size: 13px;
   color: #666666;
+  line-height: 21px;
 }
 
 
@@ -356,8 +357,10 @@ Copyright © All rights Reserved
 ----------------------*/
 
 h2{
-  font-size: 18px;
+  font-size: 17px;
   font-family: Neo Sans TR Regular;
+  margin-bottom: 22px;
+  color: #color: #666666;
 }
 
 .nav-label{
@@ -540,6 +543,8 @@ box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
   .btn-inicio{
     margin: 10px 0 10px 0;
     border-radius: 2px;
+    font-size: 13px;
+    font-weight: bold;
   }
 
   .btn-topo-direita{
@@ -796,4 +801,12 @@ box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
   background-position: 0 -170px;
   width: 19px;
   height: 22px;
+}
+
+/*Queries tamanho*/
+@media (max-width: 991px) {
+  .ajuste-barra-etapas{display: none;}
+  .ajuste-barra-itens{text-align: left;}
+  .ajuste-barra-etapa-span{padding: 10px 0 10px 0 !important;}
+  .ajuste-mobile-esquerda{text-align:left;}
 }
