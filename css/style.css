@@ -306,6 +306,51 @@ Copyright © All rights Reserved
   display:none; /* Esconde os inputs */
 }
 
+/*ajuste na tabela*/
+.ajuste-checkbox1{
+  top: 15px;
+  position: absolute;
+}
+
+/*Queries tamanho*/
+@media (max-width: 1289px) {
+  .ajuste-checkbox1{ 
+   position:relative!important;
+   top: 10px;
+   border: none;
+   }
+  
+ }
+
+@media (max-width: 899px) {
+ .ajuste-checkbox1{ 
+  position:relative!important;
+  top: 6px;
+  border: none;
+  }
+ 
+}
+@media (max-width: 899px) {
+  .ajuste-checkbox1{ 
+   position:relative!important;
+   top: 6px;
+   border: none;
+   }
+  
+ }
+ 
+
+
+.exemplo2{
+  top: 10px;
+  position: absolute;
+}
+.ajuste-row-checkbox{
+  width: 36px;
+}
+
+
+
 .exemplo1 input[type=radio] + label,
 .exemplo1 input[type=checkbox] + label,
 .exemplo2 input[type=checkbox] + label{
