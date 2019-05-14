@@ -405,9 +405,9 @@ h2{
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-    -webkit-box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
--moz-box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
-box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
+    /*-webkit-box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
+    box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);*/
   }
   
   .navbar-primary.collapsed {
@@ -502,6 +502,9 @@ box-shadow: 2px 2px 7px 0px rgba(222,222,222,0.25);
     /*margin-top: 60px;*/
     margin-left: 200px;
     padding: 0 0 90px 0;
+    -webkit-box-shadow: inset 10px 0px 7px -7px rgba(222,222,222,0.25);
+    -moz-box-shadow: inset 10px 0px 7px -7px rgba(222,222,222,0.25);
+    box-shadow: inset 10px 0px 7px -7px rgba(222,222,222,0.25);
   }
 
 
